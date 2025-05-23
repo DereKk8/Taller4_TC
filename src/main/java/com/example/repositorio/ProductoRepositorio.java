@@ -4,12 +4,15 @@ import com.example.modelo.Producto;
 
 import java.util.*;
 
+import org.springframework.stereotype.Repository;
+
+@Repository
 public class ProductoRepositorio {
     private Map<Long, Producto> mapaProductos = new HashMap<>();
 
     public ProductoRepositorio() {
-        mapaProductos.put(1L, new Producto(1L, "Laptop", 1200.00));
-        mapaProductos.put(2L, new Producto(2L, "Smartphone", 800.00));
+        mapaProductos.put(1L, new Producto(1L, "Computadora", 1200.00));
+        mapaProductos.put(2L, new Producto(2L, "Celular", 800.00));
         mapaProductos.put(3L, new Producto(3L, "Tablet", 400.00));
     }
 
