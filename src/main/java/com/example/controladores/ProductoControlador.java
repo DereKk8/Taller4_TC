@@ -6,9 +6,14 @@ import com.example.servicio.ProductoServicioImpl;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
 public class ProductoControlador {
     private ProductoServicio servicio;
 
+    @Autowired
     public ProductoControlador() {
         this.servicio = new ProductoServicioImpl();
     }
